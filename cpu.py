@@ -66,7 +66,7 @@ class CPU:
             elif a > b:
                 self.eq, self.lt, self.gt = (0, 0, 1)
         else:
-            raise Exception("Unsupported ALU operation")
+            raise Exception("ALU operation not supported!")
 
     def trace(self):
         print(f"TRACE: %02X | %02X %02X %02X |" % (
